@@ -95,12 +95,12 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
    - Alternatively, use a servo motor to communicate tactile messages via Morse code, enabling users to receive nuanced feedback about their surroundings.
 
 ## Project Timeline
-| **Phase**             | **Duration**          |
-|-----------------------|-----------------------|
-| Backend Development   | 15 Nov - 20 Nov       |
-| Frontend Development  | 15 Nov - 20 Nov       |
-| Hardware Assembly     | 20 Nov - 25 Nov       |
-| Integration & Testing | 20 Nov - 25 Nov       |
+| **Phase**             | **Duration**                |
+|-----------------------|-----------------------------|
+| Backend Development   | 15 Nov - 20 Nov, 2024       |
+| Frontend Development  | 15 Nov - 20 Nov, 2024       |
+| Hardware Assembly     | 20 Nov - 25 Nov, 2024       |
+| Integration & Testing | 20 Nov - 25 Nov, 2024       |
 
 ## Expected Outcomes
 - A functional smart walking stick for visually impaired training schools.
