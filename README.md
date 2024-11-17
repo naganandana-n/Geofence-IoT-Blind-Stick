@@ -108,4 +108,4 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
 - Improved safety and mobility for visually impaired individuals during training.
 
 ## Contributing
-Marvin Showkat, Sneha Sunil, Naganandana Nagendra, Suleiman Bin Daud under the guidance of Prof Jagadish Nayak, Prof Ashwani Saini, Prof Hidayathulla.
+Marvin Showkat, Sneha Sunil, Naganandana Nagendra, Suleiman Bin Daud under the guidance of Prof Jagadish Nayak, Prof Ashwani Saini and Prof Hidayathulla.
