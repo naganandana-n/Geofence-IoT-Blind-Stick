@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #map {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
