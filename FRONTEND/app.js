@@ -25,6 +25,10 @@ const drawControl = new L.Control.Draw({
 });
 map.addControl(drawControl);
 
+// Store markers for real-time locations
+const realTimeMarkers = new L.FeatureGroup();
+map.addLayer(realTimeMarkers);
+
 // Event listener for when a new shape is created
 map.on(L.Draw.Event.CREATED, (event) => {
   const layer = event.layer;
@@ -95,7 +99,7 @@ const displaySavedGeofence = (coordinates) => {
 // Real-time Table Updates
 const locationTable = document.getElementById('location-table');
 
-// Function to fetch real-time data
+// Function to fetch real-time GPS data and update markers
 async function fetchLocationData() {
   try {
     const response = await fetch('http://localhost:3000/api/gps');
@@ -104,8 +108,23 @@ async function fetchLocationData() {
     // Clear the table
     locationTable.innerHTML = '';
 
-    // Populate the table with new data
+    // Clear previous markers
+    realTimeMarkers.clearLayers();
+
+    // Populate the table and map with new data
     data.forEach((location) => {
+      // Add a marker to the map
+      const marker = L.marker([location.latitude, location.longitude]).addTo(realTimeMarkers);
+
+      // Add a popup to the marker
+      marker.bindPopup(`
+        <strong>Location:</strong> 
+        Latitude: ${location.latitude}, 
+        Longitude: ${location.longitude}, 
+        Timestamp: ${new Date(location.timestamp).toLocaleString()}
+      `);
+
+      // Add data to the table
       const row = `
         <tr>
           <td>${location.latitude}</td>
@@ -120,5 +139,5 @@ async function fetchLocationData() {
   }
 }
 
-// Fetch data every 5 seconds
+// Fetch GPS data and update markers every 5 seconds
 setInterval(fetchLocationData, 5000);
