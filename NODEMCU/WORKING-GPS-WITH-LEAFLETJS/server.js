@@ -26,4 +26,4 @@ app.get('/', (req, res) => {
 
 // Start the server
 server.listen(3000, () => console.log('Server running on http://192.168.7.132:3000'));
-
+// CHANGE THE ADDRESS ABOVE BASED ON YOUR LAPTOP ADDRESS (SEE THE ARDUINO CODE FOR MORE INSTRUCTIONS)
