@@ -97,10 +97,10 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
 ## Project Timeline
 | **Phase**             | **Duration**                |
 |-----------------------|-----------------------------|
-| Backend Development   | 15 Nov - 20 Nov, 2024       |
-| Frontend Development  | 15 Nov - 20 Nov, 2024       |
-| Hardware Assembly     | 20 Nov - 25 Nov, 2024       |
-| Integration & Testing | 20 Nov - 25 Nov, 2024       |
+| Backend Development   |                             |
+| Frontend Development  |                             |
+| Hardware Assembly     |                             |
+| Integration & Testing |                             |
 
 ## Expected Outcomes
 - A functional smart walking stick for visually impaired training schools.
