@@ -15,7 +15,7 @@ const char* ssid = "Naganandana";         // Replace with your WiFi SSID
 const char* password = ""; // Replace with your WiFi password
 
 // Server Configuration
-const char* serverAddress = "http://192.168.7.132:3000/update-coords"; // Replace <server_ip> with your server's IP
+const char* serverAddress = "http://3.28.218.118:3000/update-coords"; // Replace <server_ip> with your server's IP
 // MAKE SURE NODEMCU AND LAPTOP CONNECTED TO THE SAME WIFI
 // MAKE SURE TO CHANGE THIS IN SERVER.JS ALSO
 // AND CHECK INDEX.HTML FILE ALSO (I DONT THINK ANY CHANGE IS THERE - BUT FUCKING CHECK IT)
