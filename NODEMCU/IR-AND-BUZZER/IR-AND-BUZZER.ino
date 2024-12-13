@@ -47,7 +47,7 @@ void setup() {
   pinMode(buzzerPin, OUTPUT);    // Set buzzer pin as OUTPUT
   digitalWrite(buzzerPin, LOW);  // Ensure buzzer is off initially
   
-  Serial.begin(115200);          // Start Serial Monitor for debugging
+  Serial.begin(9600);          // Start Serial Monitor for debugging
   Serial.println("IR Sensor and Buzzer Test Starting...");
 }
 
