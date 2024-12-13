@@ -21,7 +21,7 @@ const char* serverAddress = "http://3.28.218.118:3000/update-coords"; // Replace
 // AND CHECK INDEX.HTML FILE ALSO (I DONT THINK ANY CHANGE IS THERE - BUT FUCKING CHECK IT)
 
 void setup() {
-  Serial.begin(115200); // Start Serial Monitor
+  Serial.begin(9600); // Start Serial Monitor
   neo6m.begin(9600);    // Start GPS communication
 
   // Connect to WiFi

@@ -9,7 +9,7 @@ TinyGPSPlus gps;
 
 void setup()
 {
-  Serial.begin(115200); // Start serial communication for debugging
+  Serial.begin(9600); // Start serial communication for debugging
   Serial.println("GPS Address Printing Example");
  
   neo6m.begin(9600); // Start serial communication with GPS module
@@ -19,7 +19,7 @@ void loop()
 {
   smartdelay_gps(1000); // Collect GPS data with a delay
 
-  if (gps.location.isValid())
+  if (true)
   {
     // Fetch latitude and longitude
     double latitude = gps.location.lat();
