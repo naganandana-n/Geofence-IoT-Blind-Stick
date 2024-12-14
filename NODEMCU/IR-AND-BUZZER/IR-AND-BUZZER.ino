@@ -66,6 +66,8 @@ void loop() {
 
 // Function to trigger the buzzer continuously while condition holds
 void triggerBuzzer() {
+  // THE PROBLEM WITH THIS IS THAT IT CAUSES THE NODEMCU TO RESET!
+  /*
   while (digitalRead(irSensorPin) == LOW) { // Continue as long as object is detected
     digitalWrite(buzzerPin, HIGH);
     delayMicroseconds(125); // Half cycle for 1kHz
@@ -73,4 +75,13 @@ void triggerBuzzer() {
     delayMicroseconds(125);
   }
   Serial.println("Buzzer stopped, no object detected.");
+  */
+
+  // SOLUTION:
+  for (int i = 0; i < 500; i++) { 
+    digitalWrite(buzzerPin, HIGH);
+    delayMicroseconds(125); // Half cycle of 1kHz (500µs HIGH)
+    digitalWrite(buzzerPin, LOW);
+    delayMicroseconds(125); // Half cycle of 1kHz (500µs LOW)
+  }
 }

@@ -119,11 +119,11 @@ static void smartdelay_gps(unsigned long ms) {
 
 // Function to trigger the buzzer continuously while the IR sensor detects ground
 void triggerBuzzer() {
-  while (digitalRead(irSensorPin) == LOW) { // Continue as long as object is detected
+  // TEST AFTER THE DEMONSTRATION: 
+  for (int i = 0; i < 500; i++) { 
     digitalWrite(buzzerPin, HIGH);
-    delayMicroseconds(125); // Half cycle for 1kHz
+    delayMicroseconds(125); // Half cycle of 1kHz (500µs HIGH)
     digitalWrite(buzzerPin, LOW);
-    delayMicroseconds(125);
+    delayMicroseconds(125); // Half cycle of 1kHz (500µs LOW)
   }
-  Serial.println("Buzzer stopped, no object detected.");
 }
