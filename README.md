@@ -33,7 +33,7 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
 ### Geo-Fencing
 - Schools define a safe zone using the web app.
 - The stick sends GPS data to the backend server via WiFi.
-- If the stick moves outside the geo-fence, alerts are triggered both on the web app and the stick (via the buzzer).
+- If the stick moves outside the geo-fence, alerts are triggered on the web app.
 
 ### Real-Time Monitoring
 - The web app displays the current location of the stick on an interactive map.
@@ -42,8 +42,8 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
 ## Technical Details
 
 ### Hardware Integration
-| Component       | Purpose                                  | Connection to NodeMCU  |
-|------------------|------------------------------------------|-------------------------|
+| Component        | Purpose                                 | Connection to NodeMCU   |
+|------------------|-----------------------------------------|-------------------------|
 | GPS Module       | Real-time location tracking             | UART (TX/RX pins)       |
 | IR Sensor        | Obstacle detection                      | Digital input pin       |
 | Buzzer           | Audio alert                             | Digital output pin      |
@@ -52,8 +52,7 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
 ### Web Application Features
 1. **Geo-Fence Configuration:** Define and save circular or polygonal boundaries.
 2. **Real-Time Location Tracking:** Display the stick’s current location on a map.
-3. **Alerts:** Notify administrators and sound alarms for geo-fence breaches.
-4. **Device Management:** Support for managing multiple sticks.
+3. **Alerts:** Notify administrators for geo-fence breaches.
 
 ### Communication Protocol
 - **WiFi (NodeMCU):** Sends GPS data and receives geo-fence configurations.
@@ -62,21 +61,20 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
 ## Technology Stack
 
 ### Frontend
-- **Framework:** React.js or Vanilla JavaScript
-- **Mapping Library:** Leaflet.js or Google Maps API
-- **Styling:** Bootstrap or Tailwind CSS
+- **Framework:** JavaScript
+- **Mapping Library:** Leaflet.js
+- **Styling:** CSS
 
 ### Backend
-- **Framework:** Flask (Python) or Express.js (Node.js)
-- **Database:** PostgreSQL with PostGIS or MongoDB
-- **Real-Time Communication:** Flask-SocketIO or Socket.IO
+- **Framework:** Express.js (Node.js)
+- **Database:** MongoDB
+- **Real-Time Communication:** Socket.IO
 
 ### Hosting
 - **AWS EC2 Instance:** Hosts both the frontend and backend.
 
 ## Power Management
 - Rechargeable **Li-ion battery** with a charging module (e.g., TP4056).
-- Optimized power consumption for prolonged use.
 
 ## Challenges and Solutions
 | **Challenge**                     | **Solution**                                               |
@@ -95,12 +93,14 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
    - Alternatively, use a servo motor to communicate tactile messages via Morse code, enabling users to receive nuanced feedback about their surroundings.
 
 ## Project Timeline
-| **Phase**             | **Duration**                |
-|-----------------------|-----------------------------|
-| Backend Development   |                             |
-| Frontend Development  |                             |
-| Hardware Assembly     |                             |
-| Integration & Testing |                             |
+| **Phase**             | **Duration**                        |
+|-----------------------|-------------------------------------|
+| Brainstorming         | 21st September - 21st October, 2024 |
+| Backend Development   | 21st October - 4th November, 2024   |
+| Frontend Development  | 4th - 18th November, 2024           |
+| Hardware Assembly     | 18th November - 2nd December, 2024  |
+| Integration & Testing | 2nd - 15th December, 2024           |
+| Demonstration         | 16th December, 2024                 |
 
 ## Expected Outcomes
 - A functional smart walking stick for visually impaired training schools.
