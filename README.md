@@ -10,6 +10,27 @@ The **Smart Walking Stick** is designed to assist visually impaired individuals 
 - **Web App Interface:** Manage geo-fences and monitor the stick’s location via an easy-to-use interface.
 - **Local Alarm:** Provide immediate audio alerts for safety.
 
+## Project Structure
+
+- **`FINAL-CODE`**: The main folder containing all working code.
+  - **`AWS`**: Files to be deployed on the AWS EC2 instance.
+    - `server.js`: Backend server code (Node.js with Express.js).
+    - `public`: Contains `index.html`, `app.js` - frontend files for the web application.
+  - **`NODEMCU`**: Code for the NodeMCU module.
+    - `FINAL-CODE-WITH-GPS-AND-IR`: Final working code for the NodeMCU.
+    - `TESTS`: Additional sensor test files for debugging.
+       - `BUZZER-TEST`: Test the buzzer alone.
+       - `IR-AND-BUZZER`: Test if the buzzer works with the IR sensor (change the potentiometer on the IR for debugging).
+       - `WORKING-GPS-TEST`: Test if your GPS works.
+
+## Deployment Steps
+
+### Prerequisites
+1. **Ubuntu 20.04 or 22.04 Instance**: Launch an AWS EC2 instance and connect via EC2 Instance Connect.
+2. **Node.js and npm**: Install Node.js and npm.
+3. **MongoDB**: Install and configure MongoDB.
+4. **PM2**: Install PM2 to keep the Node.js server running. (This caused issues for us - your project can work without it, just manually run 'node server.js')
+
 ## System Components
 
 ### Hardware
